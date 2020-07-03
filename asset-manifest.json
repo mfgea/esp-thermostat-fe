@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/esp-thermostat-fe/static/css/main.5f361e03.chunk.css",
+    "main.js": "/esp-thermostat-fe/static/js/main.2041b4de.chunk.js",
+    "main.js.map": "/esp-thermostat-fe/static/js/main.2041b4de.chunk.js.map",
+    "runtime-main.js": "/esp-thermostat-fe/static/js/runtime-main.ef2cf531.js",
+    "runtime-main.js.map": "/esp-thermostat-fe/static/js/runtime-main.ef2cf531.js.map",
+    "static/js/2.e2a35fd6.chunk.js": "/esp-thermostat-fe/static/js/2.e2a35fd6.chunk.js",
+    "static/js/2.e2a35fd6.chunk.js.map": "/esp-thermostat-fe/static/js/2.e2a35fd6.chunk.js.map",
+    "index.html": "/esp-thermostat-fe/index.html",
+    "precache-manifest.d188fbecddb8a2b9be76791ab3465a66.js": "/esp-thermostat-fe/precache-manifest.d188fbecddb8a2b9be76791ab3465a66.js",
+    "service-worker.js": "/esp-thermostat-fe/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/esp-thermostat-fe/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.e2a35fd6.chunk.js.LICENSE.txt": "/esp-thermostat-fe/static/js/2.e2a35fd6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/esp-thermostat-fe/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef2cf531.js",
+    "static/js/2.e2a35fd6.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2041b4de.chunk.js"
+  ]
+}
