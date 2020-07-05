@@ -1,6 +1,6 @@
-(function (d, urlPrefix, indexFile) {
+(function (d, domain, indexFile) {
     let b = d.body;
-    let replace = url => url.replace(/^https?:\/\/[^/]*/, urlPrefix);
+    let replace = url => url.replace(/^https?:\/\/[^/]*/, domain);
     function link(e) {
         if(e.rel === 'manifest') {
             d.querySelector('#manifest').setAttribute('href', e.href);
@@ -16,7 +16,7 @@
         b.appendChild(s);
     }
 
-    fetch(`${urlPrefix}${indexFile}`)
+    fetch(`${indexFile}`)
         .then(r => r.text())
         .then(txt => {
             let p = new DOMParser();
