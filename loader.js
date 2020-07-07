@@ -1,6 +1,7 @@
 (function (d, domain, indexFile) {
-    let b = d.body;
-    let replace = url => url.replace(/^https?:\/\/[^/]*/, domain);
+    const b = d.body;
+    const isLocal = url => url.test(/\blocalhost\b/) || url.test(/\b\d+\.\d+\.\d+\.\d+\b/);
+    const replace = url => isLocal(url) ? url.replace(/^https?:\/\/[^/]*/, domain) : url;
     function link(e) {
         if(e.rel === 'manifest') {
             d.querySelector('#manifest').setAttribute('href', e.href);

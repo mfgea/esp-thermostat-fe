@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/esp-thermostat-fe/precache-manifest.bc9ca8f641f401697ebd8204b64e7256.js"
+  "/esp-thermostat-fe/precache-manifest.fdb765904ec2f45f134bc5409b140031.js"
 );
 
 self.addEventListener('message', (event) => {
