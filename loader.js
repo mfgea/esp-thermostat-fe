@@ -1,6 +1,8 @@
 (function (d, domain, indexFile) {
     const b = d.body;
-    const isLocal = url => url.test(/\blocalhost\b/) || url.test(/\b\d+\.\d+\.\d+\.\d+\b/);
+    const localhostRegex = new RegExp('\\blocalhost\\b');
+    const ipRegex = new RegExp('\\b\\d+\\.\\d+\\.\\d+\\.\\d+\\b');
+    const isLocal = url => localhostRegex(url) || ipRegex.test(url);
     const replace = url => isLocal(url) ? url.replace(/^https?:\/\/[^/]*/, domain) : url;
     function link(e) {
         if(e.rel === 'manifest') {
