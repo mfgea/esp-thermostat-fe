@@ -1,0 +1,142 @@
+@import "../styles/_variables";
+
+.power-controls {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+
+  button {
+    background: white;
+    min-width: 100px;
+    padding: 0.3rem 1rem;
+    border: 1px solid $borderColor;
+    outline: none;
+
+    &.active {
+      background: $primaryColor;
+      border: 1px solid $primaryColor;
+      color: white;
+      font-weight: 600;
+    }
+
+    &:first-child {
+      border-radius: $radius 0 0 $radius;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-radius: 0 $radius $radius 0;
+      border-left: none;
+    }
+  }
+}
+
+.power-toggle {
+  display: flex;
+  align-items: center;
+
+  .react-toggle {
+    .react-toggle-track {
+      background-color: $inactiveColor;
+    }
+    .react-toggle-thumb {
+      color: $inactiveColor;
+    }
+
+    &:hover {
+      .react-toggle-track {
+        background-color: $grey;
+      }
+    }
+    
+    &--checked {
+      .react-toggle-track {
+        background-color: $primaryColor;
+      }
+      .react-toggle-thumb {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.temp-controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+
+  label {
+    margin-right: 1rem;
+    padding-bottom: 2px;
+  }
+
+  .temperature-button {
+    background: transparent;
+    padding: 0;
+    margin: 1rem 2rem;
+    border: none;
+
+    i.fa {
+      color: $inactiveColor;
+    }
+  }
+  
+  .temp-value {
+    font-size: 1.8rem;
+  }
+}
+
+.auto-controls {
+  flex-direction: row;
+
+  .time-pickers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programmed-temp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+    &[disabled] {
+      color: $inactiveColor;
+
+      button i.fa {
+        color: $incativeColorLight;
+      }
+    }
+  }
+
+  .schedule-control {
+    margin: .5rem;
+
+    &[disabled] label {
+      color: $inactiveColor;
+    }
+
+    .rc-checkbox {
+      margin-right: 1rem;
+    }
+
+    label {
+      width: 3rem;
+      display: inline-block;
+    }
+
+    input[type="time"] {
+      width: 5rem;
+    }
+  }
+
+  .temperature-button {
+    margin: .5rem;
+  }
+}

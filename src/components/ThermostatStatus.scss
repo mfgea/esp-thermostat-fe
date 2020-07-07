@@ -1,0 +1,23 @@
+#status-container {
+  flex-direction: row;
+  justify-content: space-around;
+
+  .uptime {
+    color: #666;
+    font-size: 0.8rem;
+
+    .uptime-value {
+      display: block;
+    }
+  }
+
+  .boiler-state {
+    i.fa {
+      color: #ccc;
+    }
+
+    &.on i.fa {
+      color: rgb(222, 84, 69);
+    }
+  }
+}

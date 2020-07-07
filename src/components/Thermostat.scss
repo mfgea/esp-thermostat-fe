@@ -1,0 +1,45 @@
+.thermostat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  color: #333;
+  box-sizing: border-box;
+
+  header {
+    background: rgb(144, 185, 72);
+    padding: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h1 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .time {
+      font-size: .8rem;
+    }
+  }
+  
+  section {
+    padding: 1.5rem 1rem;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
