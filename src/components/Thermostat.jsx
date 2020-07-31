@@ -31,7 +31,7 @@ export const Thermostat = ({ apiDomain }) => {
     useEffect(() => {
       if (!loading && loadData) {
         setLoading(true);
-        fetch(`${apiDomain}/status`)
+        fetch(`${apiDomain}status`)
           .then(resp => resp.json())
           .then(data => {
             setAmbientTemp(data.temperature);

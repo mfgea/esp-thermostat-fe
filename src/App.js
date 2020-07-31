@@ -3,10 +3,11 @@ import { Thermostat } from "./components/Thermostat";
 import './App.scss';
 
 function App() {
+  const apiDomain = window.apiDomain || '/api/';
   return (
     <div>
       <Thermostat
-        apiDomain={window.apiDomain}
+        apiDomain={apiDomain}
       />
     </div>
   );

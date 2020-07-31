@@ -1,5 +1,4 @@
 {
-  "homepage": "http://mfgea.github.io/esp-thermostat-fe",
   "name": "esp-thermostat-fe",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +11,6 @@
     "rc-checkbox": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-nest-thermostat": "^1.0.8",
     "react-scripts": "3.4.1",
     "react-toggle": "^4.1.1"
   },
